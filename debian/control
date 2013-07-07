@@ -1,0 +1,55 @@
+Source: libquill
+Section: libs
+Priority: extra
+Maintainer: Pekka Marjola <Pekka.Marjola@nokia.com>
+Build-Depends: debhelper (>= 7.0.50),
+    libquillimagefilter-dev (>= 1.110901.1),
+    libquillmetadata-dev (>= 1.110818.0),
+    libqt4-dev (>= 4.7),
+    libqt4-opengl-dev (>= 4.7),
+    libexif-dev (>= 0.6.19),
+    libexempi-dev (>= 2.1.1),
+    doxygen
+Standards-Version: 3.8.0
+
+Package: libquill1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libquillimagefilter1, libquillmetadata1,libexif12,
+    libexempi3
+Description: Qt based engine for mobile image processing applications
+ A high-level, Qt-based engine for building image viewing and editing applications especially for mobile devices. It provides optimized image loading and handling, fast response times for previewing images, memory-optimized handling of large images, transparent thumbnail handling and non-destructive editing.
+
+Package: libquill-dev
+Section: libdevel
+Architecture: all
+Depends: libquill1 (= ${binary:Version}),libquillimagefilter-dev,libquillmetadata-dev,libqt4-dev,
+         libexif-dev, libexempi-dev
+Description: libquill development headers
+
+Package: libquill-doc
+Section: doc
+Architecture: all
+Depends: libquill1 (= ${binary:Version})
+Description: Documentation for libquill
+
+Package: libquill1-dbg
+Section: devel
+Architecture: any
+Priority: extra
+Depends: libquill1 (= ${binary:Version})
+Description: libquill debug symbols
+
+Package: libquill-tests
+Section: tests
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4, libqtgui4, libquill1 (= ${binary:Version}), libquillimagefilter1, libquillmetadata1,libexif12, libexempi3, testrunner-lite, ci-package, ci-testing [armel]
+XB-Maemo-CI-Packages: libquill1
+XB-Maemo-CI-Stage: fast, staging
+Description: libquill unit tests
+ This is the image editor's unit tests and it includes libquill, quillimagefilter and qtimagefilter
+
+Package: quill-utils
+Section: utils
+Architecture: any
+Depends: libquill1 (= ${binary:Version})
+Description: Small independent utilities to support libquill use.

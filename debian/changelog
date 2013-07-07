@@ -1,0 +1,1408 @@
+libquill (1.111202.0+0m7) unstable; urgency=low
+
+  * This entry has been added by BIFH queue processor
+    version has been changed to 1.111202.0+0m7
+
+ -- BIFH Bot <sysint@maemo.research.nokia.com>  Fri, 02 Dec 2011 12:10:32 +0200
+
+libquill (1.111202.0) unstable; urgency=low
+
+  * Fixes: NB#292961 - Blank screen due to busy looping when edited from different process
+  * Fixes: NB#289456 - Loading thumbnail fails when file is edited from different process
+
+ -- Jarkko Palviainen <ext-jarkko.palviainen@nokia.com>  Fri, 02 Dec 2011 12:10:31 +0200
+
+libquill (1.111117.0) unstable; urgency=low
+
+  * Fixes: NB#290453 - Quill edit locking
+
+ -- Jarkko Palviainen <ext-jarkko.palviainen@nokia.com>  Thu, 17 Nov 2011 12:42:13 +0200
+
+libquill (1.110916.0) unstable; urgency=low
+
+  * Added QuillFile::isDirty().
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 16 Sep 2011 14:01:30 +0300
+
+libquill (1.110915.1) unstable; urgency=low
+
+  * Undoing a saved edit will now correctly remove the regions in all cases
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 15 Sep 2011 09:44:30 +0300
+
+libquill (1.110915.0) unstable; urgency=low
+
+  * Fixed errors in automatic test setup.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 15 Sep 2011 09:05:30 +0300
+
+libquill (1.110913.3) unstable; urgency=low
+
+  * Removed dependency on installed libquill for UTs.
+
+ -- Andres Gomez <agomez@igalia.com>  Tue, 13 Sep 2011 16:13:41 +0300
+
+libquill (1.110913.2) unstable; urgency=low
+
+  * Fixes: NB#265971 - Delay in loading thumbnails if non jpeg image of size more than 16 megapixels is present at the start of grid
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 13 Sep 2011 12:15:46 +0300
+
+libquill (1.110913.1) unstable; urgency=low
+
+  * Filtering test update
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Fri, 13 Sep 2011 10:37:00 +0300
+
+libquill (1.110913.0) unstable; urgency=low
+
+  * Added test files for the filtering tests
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Fri, 13 Sep 2011 10:31:00 +0300
+
+libquill (1.110907.1) unstable; urgency=low
+
+  * Fixes: NB#281264 - Quill doesn't always unload the biggest display
+    level image when the display level is lowered
+
+ -- Jarkko Palviainen <ext-jarkko.palviainen@nokia.com>  Thu, 08 Sep 2011 16:16:16 +0300
+
+libquill (1.110907.0) unstable; urgency=low
+
+  * Added new API Quill::saveInProgressList() for getting the list of
+    filenames being saved.
+  * Added macro in qmake project files to avoid automatic QString to
+    QUrl casts.
+  * Adding version dependencies to package build.
+
+ -- Andres Gomez <agomez@igalia.com>  Wed, 07 Sep 2011 15:24:50 +0300
+
+libquill (1.110902.1) unstable; urgency=low
+
+  * Fixed full image size query when display level for file is not set.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 02 Sep 2011 13:40:30 +0300
+
+libquill (1.110902.0) unstable; urgency=low
+
+  * Automated tests related to repeated filtering operations
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Fri, 02 Sep 2011 10:55:00 +0300
+
+libquill (1.110901.0) unstable; urgency=low
+
+  * Fixes: NB#279397 - large allocation in LoadFilter::readFileToByteArray
+    which is not possible to easily free
+
+ -- Adrian Perez <aperez@igalia.com>  Thu, 01 Sep 2011 12:49:50 +0300
+
+libquill (1.110831.1) unstable; urgency=low
+
+  * Fixed failed unit tests by optimizing the bug fix for 271068.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 31 Aug 2011 14:30:30 +0300
+
+libquill (1.110831.0) unstable; urgency=low
+
+  * Optimized the bug fix for 271068 - Autofix not working properly in some cases.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 31 Aug 2011 10:30:30 +0300
+
+libquill (1.110829.1) unstable; urgency=low
+
+  * Updated bug entry for pr1.2.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 29 Aug 2011 11:00:30 +0300
+
+libquill (1.110829.0) unstable; urgency=low
+
+  * Updated date in the tag 1.110826.0.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 29 Aug 2011 07:30:30 +0300
+
+libquill (1.110826.0) unstable; urgency=low
+
+  * Fixes: NB#271068 - Autofix not working properly in some cases
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Fri, 26 Aug 2011 15:00:46 +0300
+
+libquill (1.110819.1) unstable; urgency=low
+
+  * Updates according to QuillMetadata changes
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Fri, 19 Aug 2011 16:35:00 +0300
+
+libquill (1.110819.0) unstable; urgency=low
+
+  * transparent support for regions-of-interest when editing
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Fri, 19 Aug 2011 11:35:00 +0300
+
+libquill (1.110722.0) unstable; urgency=low
+
+  * Updated years and contact person in copyright notice.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 22 Jul 2011 13:01:30 +0300
+
+libquill (1.110630.1) unstable; urgency=low
+
+  * Sanity check for checking full image size before setting display level.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 30 Jun 2011 14:35:30 +0300
+
+libquill (1.110630.0) unstable; urgency=low
+
+  * Fixes: NB#224813 - Source packages still generating -docs packages for arm targets
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 30 Jun 2011 11:00:33 +0300
+
+libquill (1.110628.1) unstable; urgency=low
+
+  * Fixed possible usage of invalid (already freed) File instances
+    when emitting errors.
+
+ -- Adrian Perez <aperez@igalia.com>  Tue, 28 Jun 2011 14:12:54 +0300
+
+libquill (1.110628.0) unstable; urgency=low
+
+  * Fixes: NB#253776 - [TASK] Redo edit history lost for images if all operations are undone within a short time
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 28 Jun 2011 13:33:33 +0300
+
+libquill (1.110622.0) unstable; urgency=low
+
+  * Fixed Avoid using QDebug for stdout in quill benchmark application
+
+ -- Muhammad Islam <muhammad.k.islam@nokia.com>  Wed, 22 Jun 2011 14:33:33 +0300
+
+libquill (1.110526.0) unstable; urgency=low
+  * Fixes: NB#255811 Editing metadata with tracker invalidates thumbnails
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 26 May 2011 09:49:30 +0300
+
+libquill (1.110524.0) unstable; urgency=low
+  * Fixes: NB#258478 Unnecessary stat64 system calls
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 24 May 2011 13:40:30 +0300
+
+libquill (1.110518.0) unstable; urgency=low
+  * Fixes: NB#256266 Thumbnails recreated after reboot due to inaccuracy of modified time field provided by FAT file system
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 18 May 2011 10:41:30 +0300
+
+libquill (1.110513.0) unstable; urgency=low
+  * Fixes: NB#254923 Thumbnails not generated for files with "#" in the filename
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 13 May 2011 13:18:30 +0300
+
+libquill (1.110504.0) unstable; urgency=low
+  * Fixed automated test so that corrupt PNG is detected in all environments
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 04 May 2011 09:09:09 +0300
+
+libquill (1.110503.0) unstable; urgency=low
+  * Now creates failed thumbnails for corrupt files
+  * Fixes: NB#242904 Corrupt thumbnail creation delays other thumbnails
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 03 May 2011 10:39:30 +0300
+
+libquill (1.110414.0) unstable; urgency=low
+  * Fixes: NB#212559 - Sometimes Corrupted video thumbnails are displayed in
+    gallery
+  * Fixes: NB#219693 - Device captured Videos are displayed as corrupted in
+    gallery when received via bluetooth
+
+ -- Simon Pena <spena@igalia.com>  Thu, 14 Apr 2011 13:05:49 +0200
+
+libquill (1.110413.0) unstable; urgency=low
+  * Restored logging support on DEBUG mode.
+
+ -- Simon Pena <spena@igalia.com>  Wed, 13 Apr 2011 10:06:26 +0200
+
+libquill (1.110411.0) unstable; urgency=low
+  * Fixes: NB#236159 No image displayed in FSM from Gallery grid.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 11 Apr 2011 11:50:30 +0300
+
+libquill (1.110407.0) unstable; urgency=low
+
+  * Honor DEB_BUILD_OPTIONS for Debian packaging. Options "debug", "noopt"
+  	(builds with -O0) and "cov" (for adding coverage info) are supported.
+
+ -- Adrian Perez <aperez@igalia.com>  Thu, 07 Apr 2011 16:05:27 +0300
+
+libquill (1.110328.0) unstable; urgency=low
+
+  * Added proper support for using image data from memory
+
+ -- Jarkko Palviainen <ext-jarkko.palviainen@nokia.com>  Mon, 28 Mar 2011 15:11:15 +0300
+
+libquill (1.110325.0) unstable; urgency=low
+  * Fixes: NB#208795 - Orientation metadata gets deleted when image is edited in post captured mode.
+
+ -- Martti Kesäniemi <martti.kesaniemi@nokia.com>  Fri, 25 Mar 2011 12:25:30 +0200
+
+libquill (1.110324.0) unstable; urgency=low
+  * Fixes: NB#232429 Incorrect thumbnail in other applications for edited images which have been previously opened
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 24 Mar 2011 09:04:30 +0200
+
+libquill (1.110317.0) unstable; urgency=low
+  * Fixes: NB#234142 - Original image thumbnail always displays in grid after edit also
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 17 Mar 2011 13:15:00 +0200
+
+libquill (1.110311.0) unstable; urgency=low
+  * Disabled saving of temporary images
+  * Fixes: NB#227993 Thumbnail saving in busy loop
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 11 Mar 2011 11:11:11 +0200
+
+libquill (1.110309.0) unstable; urgency=low
+
+  * Fixed error handling bug
+
+ -- Jarkko Palviainen <ext-jarkko.palviainen@nokia.com>  Wed, 09 Mar 2011 12:29:41 +0200
+
+libquill (1.110307.0) unstable; urgency=low
+  * Fixed test cases to allow more calculation in rare error cases
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 07 Feb 2011 15:39:30 +0200
+
+libquill (1.110304.0) unstable; urgency=low
+
+  * Add options in build system to pass --as-needed to the linker and avoid
+    having unused libraries listed as dependencies in binaries.
+
+
+ -- Adrian Perez <aperez@igalia.com>  Fri, 04 Mar 2011 14:15:51 +0200
+
+libquill (1.110303.1) unstable; urgency=low
+  * Optimization: full image size calculations made on-demand only.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 03 Feb 2011 12:07:30 +0200
+
+
+libquill (1.110303.0) unstable; urgency=low
+
+  * Semaphore Cleanup & UnitTest Fix.
+
+ -- Muhammad Islam <muhammad.k.islam@nokia.com>  Thu, 03 Mar 2011 09:28:24 +0200
+
+libquill (1.110302.0) unstable; urgency=low
+
+  * Added QuillFile::error() function
+
+ -- Jarkko Palviainen <ext-jarkko.palviainen@nokia.com>  Wed, 02 Mar 2011 11:35:08 +0200
+
+libquill (1.110224.0) unstable; urgency=low
+  * BackgroundThread replacing QtConcurrent in ThreadManager.
+
+ -- Muhammad Khurshed Islam <muhammad.k.islam@nokia.com> Thu, 24 Feb 2011 15:33:19 +0200
+
+libquill (1.110223.0) unstable; urgency=low
+  * Current load filter not part of stack any more
+  * Fixes: NB#219172 images stretched when redo
+  * Fixes: NB#222581 images stretched when redo
+  * Fixes: NB#221105 red eye removal does not work with redo
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 23 Feb 2011 15:57:30 +0200
+
+libquill (1.110222.3) unstable; urgency=low
+  * Remove Logger unit tests
+
+ -- Simon Pena <spena@igalia.com>  Tue, 22 Feb 2011 13:19:00 +0200
+
+libquill (1.110222.2) unstable; urgency=low
+  * Change string literals into static const variables.
+
+ -- Adrian Perez <aperez@igalia.com>  Tue, 22 Feb 2011 12:14:14 +0200
+
+libquill (1.110222.0) unstable; urgency=low
+  * Make Logger only available on debugging
+
+ -- Simon Pena <spena@igalia.com>  Tue, 22 Feb 2011 10:58:54 +0200
+
+libquill (1.110217.0) unstable; urgency=low
+  * Fix to file.h
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Wed, 17 Feb 2011 15:40:00 +0200
+
+libquill (1.110216.1) unstable; urgency=low
+  * Fixes: NB#206523 Large SVG image cannot be viewed
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Wed, 16 Feb 2011 12:40:00 +0200
+
+libquill (1.110216.0) unstable; urgency=low
+  * Logger string use optimization
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 16 Feb 2011 09:34:30 +0200
+
+libquill (1.110215.0) unstable; urgency=low
+  * QuillFile constructor minor refactoring optimization
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 15 Feb 2011 12:23:20 +0200
+
+libquill (1.110208.0) unstable; urgency=low
+  * Fixes: NB#222698 Pseudo memory leak
+  * Fixes: NB#221701 Pseudo memory leak
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 08 Feb 2011 12:36:10 +0200
+
+libquill (1.110125.1) unstable; urgency=low
+  * Fixes: NB#215042 gif file edit support
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Tue, 25 Jan 2011 11:35:00 +0200
+
+libquill (1.110125.0) unstable; urgency=low
+  * Fixes: NB#215042 gif file edit support
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Tue, 25 Jan 2011 10:05:00 +0200
+
+libquill (1.110120.0) unstable; urgency=low
+  * Fixes: NB#208572 - Red eye removal not updated in image thumbnail.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 20 Jan 2011 10:45:00 +0200
+
+libquill (1.110119.0) unstable; urgency=low
+  * Fix to QuillFile::supportsEditing
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Wed, 19 Jan 2011 16:00:00 +0200
+
+libquill (1.110118.0) unstable; urgency=low
+  * Fixes: NB#201814 Random crashes related to all edit operations
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 18 Jan 2011 12:41:00 +0200
+
+libquill (1.110117.1) unstable; urgency=low
+  * Removed double loading of images
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Mon, 17 Jan 2011 19:30:00 +0200
+
+libquill (1.110117.0) unstable; urgency=low
+  * Removed double loading of images
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Mon, 17 Jan 2011 19:15:00 +0200
+
+libquill (1.110114.0) unstable; urgency=low
+  * Fixes: NB#206836 application crashed on returning from D-Bus thumbnailer
+  * Fixes: NB#216218 history XML corrupted
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 14 Jan 2011 14:55:00 +0200
+
+libquill (1.110113.0) unstable; urgency=low
+  * Fixes: NB#216626 application consumes almost 95% CPU constantly
+  * Fixes: NB#215042 QuillFile::supportsEditing() is returning true for .gif files
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 13 Jan 2011 09:26:00 +0200
+
+libquill (1.110107.0) unstable; urgency=low
+  * Fixed document generation rules to work outside scratchbox
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 07 Jan 2011 12:30:00 +0200
+
+libquill (1.110103.0) unstable; urgency=low
+  * Fixes: NB#216005 - [TASK](HImag-2574) Always save thumbnails for loaded data.
+  * Put to staging again
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Fri, 31 Dec 2010 13:45:00 +0200
+
+libquill (1.101231.0) unstable; urgency=low
+  * Fixes: NB#216005 - [TASK](HImag-2574) Always save thumbnails for loaded data.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Fri, 31 Dec 2010 13:45:00 +0200
+
+libquill (1.101230.0) unstable; urgency=low
+  * Implemented: SWP#HImag-2574
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 30 Dec 2010 14:50:00 +0200
+
+libquill (1.101223.0) unstable; urgency=low
+  * Disabled two automated tests due to changes in environment
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 23 Dec 2010 12:30:00 +0200
+
+libquill (1.101220.0) unstable; urgency=low
+  * Fixed automated test in previous build
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 20 Dec 2010 10:10:00 +0200
+
+libquill (1.101217.1) unstable; urgency=low
+  * Unit-test additions & Coverity fixes
+
+ -- Martti Kesaniemi <martti.kesaniemi@nokia.com>  Mon, 17 Dec 2010 15:15:00 +0200
+
+libquill (1.101217.0) unstable; urgency=low
+  * Fixes: NB#211449 Libquill cannot be built with -O0
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 17 Dec 2010 15:10:00 +0200
+
+libquill (1.101216.0) unstable; urgency=low
+  * Fixes to previous commits
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 16 Dec 2010 15:30:00 +0200
+
+libquill (1.101215.0) unstable; urgency=low
+  * Fixes to previous commit
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 15 Dec 2010 10:22:00 +0200
+
+libquill (1.101214.0) unstable; urgency=low
+  * Fixes: NB#207298 - Images shown that have been replaced (overwritten)
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 14 Dec 2010 10:48:00 +0200
+
+libquill (1.101213.1) unstable; urgency=low
+  * Fixes: NB#211092 - QuillFile::HasThumbnail(-1) causes segmentation fault
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 13 Dec 2010 11:00:00 +0200
+
+libquill (1.101213.0) unstable; urgency=low
+  * Fixes: NB#210411 - Previously captured image is displayed when undo the edited changes on the just captured image.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 13 Dec 2010 07:30:00 +0200
+
+libquill (1.101203.0) unstable; urgency=low
+  * Revert: NB#195586 - Image cropped after setImage() not properly visible
+  * Revert: NB#207430 - Blank screen shown after setImage()
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Fri, 03 Dec 2010 07:45:00 +0200
+
+libquill (1.101201.0) unstable; urgency=low
+  * Fixes: NB#202523 - Gallery application crash observed while resize the image.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 01 Dec 2010 10:15:00 +0200
+
+libquill (1.101130.1) unstable; urgency=low
+  * Fixes: NB#204012 - libquill-tests fail during execution.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 30 Nov 2010 10:45:00 +0200
+
+libquill (1.101130.0) unstable; urgency=low
+  * fixed: ut_file unit test
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 30 Nov 2010 10:00:00 +0200
+
+libquill (1.101129.0) unstable; urgency=low
+  * Implemented: SWP#HImag-2514
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 29 Nov 2010 08:15:00 +0200
+
+libquill (1.101116.0) unstable; urgency=low
+  * Fixes: NB#204692 -Opening video in fullscreen gives infinite warnings: "QImage::scaled: Image is a null image"
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 16 Nov 2010 10:45:00 +0200
+
+libquill (1.101114.0) unstable; urgency=low
+  * Fixes: NB#204123 - CPU consumption is more than 95% constantly when ever video files are viewed in FSM
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Sun, 14 Nov 2010 13:45:00 +0200
+
+libquill (1.101111.0) unstable; urgency=low
+  * Fixes: NB#204012 - libquill-tests fail during execution
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 11 Nov 2010 13:45:00 +0200
+
+libquill (1.101108.0) unstable; urgency=low
+  * Fixes: NB#202287-Editing DUT local image with a PC and saving image to DUT - thumbnail image and opened image in Gallery shows still old version of image
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 08 Nov 2010 08:45:00 +0200
+
+libquill (1.101104.0) unstable; urgency=low
+  * Supports string based filter options.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 04 Nov 2010 16:29:00 +0200
+
+libquill (1.101101.0) unstable; urgency=low
+  * Fixes: NB#197053 -Thumbnails not generated properly for straighten image
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 01 Nov 2010 12:45:00 +0200
+
+libquill (1.101028.1) unstable; urgency=low
+  * Fixed testcase in previous entry
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 28 Oct 2010 12:13:00 +0200
+
+libquill (1.101028.0) unstable; urgency=low
+  * Implemented: SWP#HImag-2460
+  * Implemented: SWP#HImag-2455
+  * Fixes: NB#196813 Coverity defects
+  * External D-bus thumbnailer now supports any non-image mimetype
+  * Editing now works on preview even if final image is not complete
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 28 Oct 2010 10:08:00 +0200
+
+libquill (1.101018.0) unstable; urgency=low
+  * Support for Exif orientation.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 18 Oct 2010 12:54:00 +0200
+
+libquill (1.101015.0) unstable; urgency=low
+  * Removed dead functionality.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 15 Oct 2010 09:15:00 +0200
+
+libquill (1.101013.0) unstable; urgency=low
+  * Fixes: NB#197764 Segmentation fault in scheduler
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 13 Oct 2010 09:28:00 +0200
+
+libquill (1.101012.1) unstable; urgency=low
+  * Fixes: NB#197412 Random crashes
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 12 Oct 2010 14:29:00 +0200
+
+libquill (1.101012.0) unstable; urgency=low
+  * Implemented: SWP#HImag-2048
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 12 Oct 2010 12:40:00 +0200
+
+libquill (1.101011.0) unstable; urgency=low
+  * Removed accidentally added testcase.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 08 Oct 2010 16:06:00 +0200
+
+libquill (1.101008.1) unstable; urgency=low
+  * Replaced obsolete testrunner dependency with testrunner-lite
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 08 Oct 2010 16:06:00 +0200
+
+libquill (1.101008.0) unstable; urgency=low
+  * Cache and CPU cycle optimizations.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 08 Oct 2010 15:12:00 +0200
+
+libquill (1.100927.0) unstable; urgency=low
+  * Optimizing format detection.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 27 Sep 2010 13:59:00 +0200
+
+libquill (1.100916.0) unstable; urgency=low
+  * Implemented: SWP#HImag-2303
+  * Load and edit priority can now be explicitly set
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 16 Sep 2010 09:10:00 +0200
+
+libquill (1.100914.0) unstable; urgency=low
+  * Fixed tests directory structure
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 14 Sep 2010 08:17:00 +0200
+
+libquill (1.100913.3) unstable; urgency=low
+  * Fixed benchmark API
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 13 Sep 2010 12:05:00 +0200
+
+libquill (1.100913.2) unstable; urgency=low
+  * Fixes: NB#191407 Source package 'libquill', 'libquillmetadata' interfaces not frozen in 0.2010.36-5
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 13 Sep 2010 10:03:00 +0200
+
+libquill (1.100913.1) unstable; urgency=low
+  * API is now stable.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 13 Sep 2010 10:00:00 +0200
+
+libquill (1.100910.0) unstable; urgency=low
+  * Further optimized thumbnail existence checks.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 10 Sep 2010 08:15:00 +0200
+
+libquill (1.100903.0) unstable; urgency=low
+  * Optimized file use with lots of small images.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 03 Sep 2010 14:45:00 +0200
+
+libquill (1.100901.0) unstable; urgency=low
+  * Polished interface: removed file limits, added priorities
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 01 Sep 2010 15:35:00 +0200
+
+libquill (1.100827.1) unstable; urgency=low
+  * Fixes: NB#187501 Thumbnails generated for corrupt image
+  * Fixed regressions in interface polishing
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 27 Aug 2010 13:00:00 +0200
+
+libquill (1.100827.0) unstable; urgency=low
+  * Fixes: NB#164692 If an already edited image is opened original image in the tools dialog place holder is not correct
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Fri, 27 Aug 2010 12:15:00 +0200
+
+libquill (1.100826.1) unstable; urgency=low
+  * Fixed build problems in benchmark
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 26 Aug 2010 13:30:00 +0200
+
+libquill (1.100826.0) unstable; urgency=low
+  * Fixes: NB#180306 <coverity>
+  * Fixes: NB#180037 Low resolution images are not displayed properly in thumbnails
+  * Expanded high level benchmark code
+  * Polished interface
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 26 Aug 2010 13:00:00 +0200
+
+libquill (1.100820.0) unstable; urgency=low
+  * New benchmark code
+  * Fixed package description
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 20 Aug 2010 09:40:00 +0200
+
+libquill (1.100817.0) unstable; urgency=low
+
+  * Fixes: NB#184832 Video thumbnails not shown at all
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 17 Aug 2010 15:45:00 +0200
+
+libquill (1.100811.1) unstable; urgency=low
+
+  * Added missing test image for GIF format
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 11 Aug 2010 12:45:00 +0200
+
+libquill (1.100811.0) unstable; urgency=low
+
+  * Moving internally to file state instead of flags
+  * Fixes: NB#183057 Thumbnails not immediately available
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 11 Aug 2010 08:35:00 +0200
+
+libquill (1.100803.1) unstable; urgency=low
+
+  * Fixes: NB#172907 Thumbnail for one image, when opened it displays another image
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 03 Aug 2010 11:15:00 +0200
+
+libquill (1.100803.0) unstable; urgency=low
+
+  * Fixes: NB#176911 Camera-ui crashes observed in Post-capture Edit view “_dbus_connection_unlock (connection=0x1) at dbus-connection.c:372”
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 03 Aug 2010 11:15:00 +0200
+
+libquill (1.100802.0) unstable; urgency=low
+
+  * Fixes: NB#174787 BMP edits failing due to metadata
+  * Fixes: NB#181972 GIF images not shown in full screen mode
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 02 Aug 2010 14:15:00 +0200
+
+libquill (1.100729.0) unstable; urgency=low
+
+  * Fixes: NB#177039 Crash in SaveMap::isBufferComplete
+  * Fixes: NB#180120 Crash on using the edit option AutoFixall
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 29 Jul 2010 10:15:00 +0200
+
+libquill (1.100618.0) unstable; urgency=low
+
+  * Fixes: NB#168104 Infamous white-screen bug
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 18 Jun 2010 12:50:00 +0200
+
+libquill (1.100614.4) unstable; urgency=low
+
+  * Fixed: quill-utils installing path
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 16 Jun 2010 13:50:00 +0200
+
+libquill (1.100614.3) unstable; urgency=low
+
+  * Fixes: NB#174357 quill-utils should not install binaries in /usr/bin/quill-utils/
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 16 Jun 2010 13:50:00 +0200
+
+libquill (1.100614.2) unstable; urgency=low
+
+  * Tag again
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 16 Jun 2010 13:15:00 +0200
+
+libquill (1.100614.1) unstable; urgency=low
+
+  * Tag again
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 16 Jun 2010 13:00:00 +0200
+
+libquill (1.100614.0) unstable; urgency=low
+
+  * Fixes: NB#174314 Add an API file to the source package of the ImageEditingOperations interface
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 16 Jun 2010 12:40:00 +0200
+
+libquill (1.100610.0) unstable; urgency=low
+
+  * Fixes: NB#169686 Random UI crashes at Scheduler::processFinishedTask()
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 10 Jun 2010 14:25:00 +0200
+
+libquill (1.100604.1) unstable; urgency=low
+
+  * Fixes: NB#166261 <CodeStyle><Saftey>.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Fri, 04 Jun 2010 12:20:00 +0200
+
+libquill (1.100604.0) unstable; urgency=low
+
+  * Changed API to match with libquillmetadata
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 04 Jun 2010 10:25:00 +0200
+
+libquill (1.100603.0) unstable; urgency=low
+
+  * Re-tagged to handle binary break with libquillmetadata
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 03 Jun 2010 15:30:00 +0200
+
+libquill (1.100601.0) unstable; urgency=low
+
+  * Fixed potential problems with cropped thumbnails
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 01 Jun 2010 10:30:00 +0200
+
+libquill (1.100531.0) unstable; urgency=low
+
+  * Fixes: NB#168252 Application crashed at ~QuillUndoCommand
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 31 May 2010 10:20:00 +0200
+
+libquill (1.100525.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-2047
+  * Implemented: SWP#HImag-2079
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 25 May 2010 15:25:00 +0200
+
+libquill (1.100521.1) unstable; urgency=low
+
+  * Removed all "virtual" keywords from QuillFile to avoid further ABI breaks.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 21 May 2010 08:50:00 +0200
+
+libquill (1.100521.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-2047
+  * Implemented: SWP#HImag-2103
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 21 May 2010 08:20:00 +0200
+
+libquill (1.100520.1) unstable; urgency=low
+
+  * Fixed metadata dependency in control file
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 20 May 2010 09:30:00 +0200
+
+libquill (1.100520.0) unstable; urgency=low
+
+  * Added metadata dependency in control file
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 20 May 2010 09:00:00 +0200
+
+libquill (1.100519.0) unstable; urgency=low
+
+  * Removed metadata from libquill
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 19 May 2010 09:00:00 +0200
+
+libquill (1.100518.2) unstable; urgency=low
+
+  * Replacing previous entry which was not properly registered.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 18 May 2010 13:45:00 +0200
+
+libquill (1.100518.1) unstable; urgency=low
+
+  * Changed libquill configuration back to release
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 18 May 2010 10:15:00 +0200
+
+libquill (1.100518.0) unstable; urgency=low
+
+  * Dropping redo history on request
+  * Getting last modification time of a file
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 18 May 2010 08:50:00 +0200
+
+libquill (1.100514.2) unstable; urgency=low
+
+  * Initial naive implementation of cropped thumbnails.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 14 May 2010 13:10:00 +0200
+
+libquill (1.100514.1) unstable; urgency=low
+
+  * Fixed problem of permissions checking in the previous build.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 14 May 2010 10:55:00 +0200
+
+libquill (1.100514.0) unstable; urgency=low
+
+  * Fixes: NB#167136 File unnecessarily opened for writing
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 14 May 2010 09:20:00 +0200
+
+libquill (1.100510.0) unstable; urgency=low
+
+  * Fixes: NB#165305
+  * Fixes: NB#166261
+  * Fixed another potential crash.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 10 May 2010 10:00:00 +0200
+
+libquill (1.100506.1) unstable; urgency=low
+
+  * Fixes: NB#167489 No thumbnails generated for read-only images
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 06 May 2010 17:20:00 +0200
+
+libquill (1.100506.0) unstable; urgency=low
+
+  * Response time optimizations
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 06 May 2010 12:20:00 +0200
+
+libquill (1.100503.0) unstable; urgency=low
+
+  * Fixes: NB#165752 Code review
+  * Fixes: NB#165757 Code review
+  * Implemented: SWP#HImag-1918
+  * Implemented: SWP#HImag-1919
+  * Implemented: SWP#HImag-1920
+  * Implemented: SWP#HImag-1921
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 03 May 2010 13:15:00 +0200
+
+libquill (1.100423.0) unstable; urgency=low
+
+  * Support for image formats, rendering of transparency and vector graphics.
+  * Implemented: SWP#HImag-1925
+  * Implemented: SWP#HImag-1928
+  * Implemented: SWP#HImag-1922
+  * Implemented: SWP#HImag-1927
+  * Implemented: SWP#HImag-1926
+  * Implemented: SWP#HImag-1930
+  * Implemented: SWP#HImag-1913
+  * Implemented: SWP#HImag-1931
+  * Fixes: NB#161125 QuillImage::z() returns always zero
+  * Fixes: NB#165305 <MemLeak> valgrind report
+  * Fixes: NB#164289 image covered with dark green color background
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 23 Apr 2010 10:55:00 +0200
+
+libquill (1.100420.0) unstable; urgency=low
+
+  * change version no and make tag
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 10 Apr 2010 15:00:00 +0200
+
+libquill (1.100416.0) unstable; urgency=low
+
+  * Small fixes to export feature.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 16 Apr 2010 15:15:00 +0200
+
+libquill (1.100415.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-1930
+  * Implemented: SWP#HImag-1925
+  * Implemented: SWP#HImag-1913
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 15 Apr 2010 09:50:00 +0200
+
+libquill (1.100407.0) unstable; urgency=low
+
+  * Quill will also emit removed() signals.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 07 Apr 2010 11:50:00 +0200
+
+libquill (1.100406.0) unstable; urgency=low
+
+  * Testing meego repository
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 06 Apr 2010 09:30:00 +0200
+
+libquill (1.100323.0) unstable; urgency=low
+
+  * Fixes: NB#161274 Image corruption due to XMP writeback problems
+  * Fixes: NB#161592 Application crash after repeated free rotate
+  * Fixes: NB#161125 QuillImage::z() always returns zero
+  * Fixes: NB#161238 Restore not working after two calls to revert
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 24 Mar 2010 09:20:00 +0200
+
+libquill (1.100317.1) unstable; urgency=low
+
+  * Fixed: failing unit tests due to optional revert index
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 17 Mar 2010 12:40:00 +0200
+
+libquill (1.100317.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-1874
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 17 Mar 2010 12:40:00 +0200
+
+libquill (1.100312.0) unstable; urgency=low
+
+  * Fixes: NB#160062 Memory leaks from Valgrind
+  * Fixes: NB#160273 Original image is not correct with already edited images
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 12 Mar 2010 10:50:00 +0200
+
+libquill (1.100308.0) unstable; urgency=low
+
+  * Fixed failing test case.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 08 Mar 2010 15:50:00 +0200
+
+libquill (1.100305.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-1290
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 05 Mar 2010 15:20:00 +0200
+
+libquill (1.100302.0) unstable; urgency=low
+
+  * Fixes: NB#158664 XMP metadata caused memory leaks
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 02 Mar 2010 16:30:00 +0200
+
+libquill (1.100222.0) unstable; urgency=low
+
+  * Fixes: NB#157603 Libquill crashes when waiting for data
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 22 Feb 2010 15:10:00 +0200
+
+libquill (1.100219.0) unstable; urgency=low
+
+  * Fixes: NB#157603 Libquill crashes when waiting for data
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 19 Feb 2010 15:30:00 +0200
+
+libquill (1.100218.0) unstable; urgency=low
+
+  * Fixes: NB#156561 Defects from static analysis
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 18 Feb 2010 15:30:00 +0200
+
+libquill (1.100212.0) unstable; urgency=low
+
+  * Fixes: NB#155857 Saving blocks other edits
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 12 Feb 2010 12:30:00 +0200
+
+libquill (1.100209.0) unstable; urgency=low
+
+  * Fixes: NB#153985 Read-only images can be edited
+  * Fixes: NB#153984 Undo is allowed even if the original is deleted
+  * Fixes: NB#150875 Memory leak in tests
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 9 Feb 2010 12:30:00 +0200
+
+libquill (1.100204.0) unstable; urgency=low
+
+  * change version number for tagging
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 4 Feb 2010 10:50:00 +0200
+
+libquill (1.100203.0) unstable; urgency=low
+
+  * EXIF writing.
+  * Implemented: SWP#HImag-235
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 3 Feb 2010 16:50:00 +0200
+
+libquill (1.100202.0) unstable; urgency=low
+
+  * IPTC-IIM reading.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 2 Feb 2010 16:35:00 +0200
+
+libquill (1.100201.1) unstable; urgency=low
+
+  * Fixed test crash.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 1 Feb 2010 13:55:00 +0200
+
+libquill (1.100201.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-1605
+  * Implemented: SWP#HImag-1606
+  * Implemented: SWP#HImag-1607
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Mon, 01 Feb 2010 12:40:00 +0200
+
+libquill (1.100122.0) unstable; urgency=low
+
+  * Tagged again to solve integration problems.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 22 Jan 2010 13:10:00 +0200
+
+libquill (1.100120.1) unstable; urgency=low
+
+  * Fixed bad merge resolve.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 20 Jan 2010 09:35:00 +0200
+
+libquill (1.100120.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-1442
+  * Implemented: SWP#HImag-1522
+  * Improved handling for error situations and crashes.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 20 Jan 2010 08:55:00 +0200
+
+libquill (1.091223.0) unstable; urgency=low
+
+  * Enables crash recovery to taken into use, also has Quill's global signals.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Wed, 23 Dec 2009 14:15:00 +0200
+
+libquill (1.091217.1) unstable; urgency=low
+
+  * Fixes: CITA green
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 17 Dec 2009 14:30:00 +0200
+
+libquill (1.091217.0) unstable; urgency=low
+
+  * Fixes: CITA green
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Thu, 17 Dec 2009 14:05:00 +0200
+
+libquill (1.091215.1) unstable; urgency=low
+
+  * Fixes: NB#150785 valgrind report for ut_imagecache, ut_imageloader, ut_stack
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 15 Dec 2009 15:55:00 +0200
+
+libquill (1.091215.0) unstable; urgency=low
+
+  * Fixes: NB#150106 libquill: missing doxygen from build dependencies
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 15 Dec 2009 10:45:00 +0200
+
+libquill (1.091207.0) unstable; urgency=low
+  * Can query Quill if saving files is in progress.
+  * Sanity checks and other stability fixes.
+  * Fixes: NB#118830 Gallery crashes when edit operations are performed multiple times.
+  * Fixes: NB#124606 Doing edit operations over high resolution images crashes the gallery application
+  * Fixes: NB#146925 Gallery does not save images when /tmp folder is 100%
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 07 Dec 2009 09:05:00 +0200
+
+libquill (1.091130.0) unstable; urgency=low
+
+  * Implemented: SWP#HImag-1402
+  * Major interface rewrite: QuillFile object constructors and destructors.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Mon, 30 Nov 2009 13:50:00 +0200
+
+libquill (1.091125.1) unstable; urgency=low
+
+  * Implements: Supports setting images and changing the "waiting for data" state for an image.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 25 Nov 2009 13:50:00 +0200
+
+libquill (1.091125.0) unstable; urgency=low
+
+  * Fixes: NB#147832 - libquill-doc package doesn' t install doxygen documentation
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Wed, 25 Nov 2009 12:50:00 +0200
+
+libquill (1.091117.0) unstable; urgency=low
+
+  * Fixes: NB#146925 - Gallery does not save images when /tmp folder is 100%
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 17 Nov 2009 12:50:00 +0200
+
+libquill (1.091113.0) unstable; urgency=low
+
+  * Fixes: NB#145052 - libquill-dev should depend on libqt4-dev
+  * Fixes: NB#142807 - gallery crashed when tapped on local collection title with high resolution images.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 13 Nov 2009 10:50:00 +0200
+
+libquill (1.091110.2) unstable; urgency=low
+
+  * change version number for integration.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 10 Nov 2009 10:55:00 +0200
+
+libquill (1.091110.1) unstable; urgency=low
+
+  * change version number for integration.
+
+ -- Wenpeng Zhou <ext-wenpeng.2.zhou@nokia.com>  Tue, 10 Nov 2009 10:55:00 +0200
+
+libquill (1.091110.0) unstable; urgency=low
+  * Refactoring and memory related fixes.
+  * Implemented: SWP#HImag-1404
+  * Implemented: SWP#HImag-1439
+  * Fixes: NB#145316 - Libquill packages include profiling
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 10 Nov 2009 10:10:00 +0200
+
+
+libquill (1.091103.0) unstable; urgency=low
+  * Implemented: SWP#HImag-1413
+  * Fixes: NB#145052 - libquill-dev should depend on libqt4-dev
+  * Fixes: NB#145053 - libquill-dev should have a versioned dependency on libquill1
+  * Fixes: NB#145054 - libquill-dev should not contain libunittests.so
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 03 Nov 2009 10:10:00 +0200
+
+
+libquill (1.091030.0) unstable; urgency=low
+  * Fixed file reopening immediately after save.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Fri, 30 Oct 2009 14:15:00 +0200
+
+
+libquill (1.091029.0) unstable; urgency=low
+  * Fixed memory handling from previous.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Thu, 29 Oct 2009 10:55:00 +0200
+
+libquill (1.091028.0) unstable; urgency=low
+
+  * Fixes: NB#143123 - <coverity> defects from libquill and quillimagefilter .
+  * Fixes: NB#143477 -libquill's cache limit blocks the panning.
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 28 Oct 2009 15:20:00 +0200
+
+libquill (1.091027.0) unstable; urgency=low
+
+  * Fixes: NB#143813 - Doing undo or redo operations does not save the images.
+  * Fixes: NB#143438 - Various build environment problems for libquill
+  * Fixes: NB#142605 - The .pc file of libquill-dev is incorrect
+
+ -- Jussi Rautio <ext-jussi.2.rautio@nokia.com>  Tue, 27 Oct 2009 11:50:00 +0200
+
+libquill (1.091021.0) unstable; urgency=low
+
+  * change version number for integration.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 21 Oct 2009 10:55:00 +0200
+
+libquill (1.091014.0) unstable; urgency=low
+
+  * change version number.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 14 Oct 2009 10:55:00 +0200
+
+libquill (1.091009.0) unstable; urgency=low
+
+  * change version number.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Fri, 09 Oct 2009 10:55:00 +0200
+
+libquill (1.091006.0) unstable; urgency=low
+
+  * change version number.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 06 Oct 2009 10:55:00 +0200
+
+libquill (1.091002.0) unstable; urgency=low
+
+  * change version number.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Fir, 02 Oct 2009 10:55:00 +0200
+
+libquill (1.090930.0) unstable; urgency=low
+
+  * change version number.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 30 Sep 2009 10:55:00 +0200
+
+libquill (1.090928.0) unstable; urgency=low
+
+  * change tests.xml.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 28 Sep 2009 10:55:00 +0200
+
+libquill (1.090924.0) unstable; urgency=low
+
+  * Small fixes.
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 23 Sep 2009 14:55:00 +0200
+
+libquill (1.090923.1) unstable; urgency=low
+
+  * Add dependency to libqt4-opengl-dev to get around build problem with Qt 4.6
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 23 Sep 2009 14:55:00 +0200
+
+libquill (1.090923.0) unstable; urgency=low
+
+  * Edit history auto-save
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 23 Sep 2009 12:00:00 +0200
+
+libquill (1.090918.1) unstable; urgency=low
+
+  * fixed bugs
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 18 Sep 2009 15:00:00 +0200
+
+libquill (1.090918.0) unstable; urgency=low
+
+  * deletion and thumbnail support
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 18 Sep 2009 08:00:00 +0200
+
+libquill (1.090914.1) unstable; urgency=low
+
+  * fixed bugs
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 14 Sep 2009 12:30:00 +0200
+
+libquill (1.090908.1) unstable; urgency=low
+
+  * true multi-file and multi-editing support
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 08 Sep 2009 09:00:00 +0200
+
+libquill (1.090804.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 04 Aug 2009 09:00:00 +0200
+
+libquill (1.090727.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 27 July 2009 15:00:00 +0200
+
+libquill (1.090715.1) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 15 July 2009 15:23:00 +0200
+
+ (1.090715.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 15 July 2009 09:23:00 +0200
+
+libquill (1.090618.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Thu, 18 June 2009 09:23:00 +0200
+
+libquill (1.090617.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Wed, 17 June 2009 09:23:00 +0200
+
+libquill (1.090616.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 16 June 2009 09:23:00 +0200
+
+libquill (1.090608.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 08 June 2009 09:23:00 +0200
+
+libquill (1.090604.1) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Thu, 04 June 2009 09:23:00 +0200
+
+libquill (1.090604.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Thu, 04 June 2009 09:23:00 +0200
+
+libquill (1.090603.1) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 02 June 2009 09:23:00 +0200
+
+libquill (1.090603.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 02 June 2009 09:23:00 +0200
+
+libquill (1.090602.0) unstable; urgency=low
+
+  * change version number for integration
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 02 June 2009 09:23:00 +0200
+
+libquill (1.090527.1) unstable; urgency=low
+
+  * remove dev package version check
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 27 May 2009 09:23:00 +0200
+
+libquill (1.090527.0) unstable; urgency=low
+
+  * fixed dev package dependency
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 27 May 2009 09:23:00 +0200
+
+libquill (1.090526.1) unstable; urgency=low
+
+  * add xml format
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 26 May 2009 09:23:00 +0200
+
+libquill (1.090526.0) unstable; urgency=low
+
+  * add tiling
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 26 May 2009 09:23:00 +0200
+
+libquill (1.090511.0) unstable; urgency=low
+
+  * add doxygen
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 11 May 2009 09:23:00 +0200
+
+libquill (1.090427.0) unstable; urgency=low
+
+  * integration with gallery
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Mon, 27 April 2009 09:23:00 +0200
+
+libquill (1.090325.0) unstable; urgency=low
+
+  * -tests package updated
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 25 Mar 2009 09:23:00 +0200
+
+libquill (1.090324.0) unstable; urgency=low
+
+  * Update
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 24 Mar 2009 15:05:00 +0200
+
+libquill (1.090320.0) unstable; urgency=low
+
+  * Update
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 20 Mar 2009 09:25:00 +0200
+
+libquill (1.090319.5) unstable; urgency=low
+
+  * Debianisation changed
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 10 Mar 2009 15:12:00 +0200
+
+libquill (0.1.1) unstable; urgency=low
+
+  * Initial release
+
+ -- Pekka Marjola <Pekka.Marjola@nokia.com>  Tue, 16 Dec 2008 13:56:00 +0200
+

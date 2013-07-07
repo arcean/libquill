@@ -1,0 +1,4 @@
+usr/include/
+usr/lib/libquill*.so
+usr/lib/pkgconfig
+usr/share/qt4/mkspecs/features/quill.prf

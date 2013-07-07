@@ -1,0 +1,35 @@
+error: Tag file `qt.tag' does not exist or is not a file. Skipping it...
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/core.h (row: 634) warning: argument 'errorCode' of command @param is not found in the argument list of Core::error(QuillError error)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/core.h (row: 634) warning: argument 'data' of command @param is not found in the argument list of Core::error(QuillError error)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/core.h (row: 634) warning: The following parameters of Core::error(QuillError error) are not documented:
+  parameter 'error'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/core.h (row: 486) warning: argument 'fileDir' of command @param is not found in the argument list of Core::setTemporaryFilePath(const QString &filePath)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/core.h (row: 486) warning: The following parameters of Core::setTemporaryFilePath(const QString &filePath) are not documented:
+  parameter 'filePath'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/file.h (row: 227) warning: argument 'format' of command @param is not found in the argument list of File::isSaveInProgress() const
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/file.h (row: 489) warning: argument 'parent' of command @param is not found in the argument list of File::readFromEditHistory(const QString &fileName, QuillError *error)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/file.h (row: 489) warning: The following parameters of File::readFromEditHistory(const QString &fileName, QuillError *error) are not documented:
+  parameter 'fileName'
+  parameter 'error'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/imagecache.h (row: 95) warning: argument 'maxNotDeleteCost' of command @param is not found in the argument list of ImageCache::ImageCache(int maxCost)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/imagecache.h (row: 102) warning: argument 'ProtectionStatus' of command @param is not found in the argument list of ImageCache::insert(const File *file, int commandId, const QuillImage &image, ProtectionStatus status=NotProtected)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/imagecache.h (row: 102) warning: The following parameters of ImageCache::insert(const File *file, int commandId, const QuillImage &image, ProtectionStatus status=NotProtected) are not documented:
+  parameter 'status'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/imagecache.h (row: 123) warning: The following parameters of ImageCache::protect(const File *file, int commandId) are not documented:
+  parameter 'file'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/unix_platform.h (row: 92) warning: argument 'fileName' of command @param is not found in the argument list of LockFile::isQuillFileLocked(const QuillFile *quillFile, bool overrideOwnLock=false)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/unix_platform.h (row: 92) warning: The following parameters of LockFile::isQuillFileLocked(const QuillFile *quillFile, bool overrideOwnLock=false) are not documented:
+  parameter 'quillFile'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/unix_platform.h (row: 68) warning: argument 'fileName' of command @param is not found in the argument list of LockFile::lockQuillFile(const QuillFile *quillFile, bool overrideOwnLock=false)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/unix_platform.h (row: 68) warning: The following parameters of LockFile::lockQuillFile(const QuillFile *quillFile, bool overrideOwnLock=false) are not documented:
+  parameter 'quillFile'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/unix_platform.h (row: 85) warning: argument 'fileName' of command @param is not found in the argument list of LockFile::unlockQuillFile(const QuillFile *quillFile)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/unix_platform.h (row: 85) warning: The following parameters of LockFile::unlockQuillFile(const QuillFile *quillFile) are not documented:
+  parameter 'quillFile'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/quill.h (row: 561) warning: argument 'errorCode' of command @param is not found in the argument list of Quill::error(QuillError error)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/quill.h (row: 561) warning: argument 'data' of command @param is not found in the argument list of Quill::error(QuillError error)
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/quill.h (row: 561) warning: The following parameters of Quill::error(QuillError error) are not documented:
+  parameter 'error'
+File: /home/tomek/work/libquill-1.111202.0+0m7/src/tilemap.h (row: 71) warning: The following parameters of TileMap::TileMap(const QSize &fullImageSize, const QSize &tileSize, TileCache *tileCache) are not documented:
+  parameter 'tileCache'
+Problems running dot: exit code=126, command='dot', arguments='"/home/tomek/work/libquill-1.111202.0+0m7/doc/html/backgroundthread_8cpp__incl.dot" -Tpng -o "/home/tomek/work/libquill-1.111202.0+0m7/doc/html/backgroundthread_8cpp__incl.png" -Tcmapx -o "/home/tomek/work/libquill-1.111202.0+0m7/doc/html/backgroundthread_8cpp__incl.map"'
